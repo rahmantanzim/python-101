@@ -9,3 +9,15 @@ if 5 > 2:
 if 5>3:
     print('5 is bigger')
     print('3 is smaller')
+
+# In Python, variables are created when you assign a value to it:
+
+course = 9818 
+department = 'Software ENG'
+print(course)
+print(department)
+
+
+""" this is a comment
+written in
+more than 1 line """
