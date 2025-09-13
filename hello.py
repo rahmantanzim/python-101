@@ -66,3 +66,25 @@ y = "Thirty"
 print("Thirtys " + x  )
 
 # for printing something with the plus operator, both side of + has to be in same type
+
+# Global varibales
+# variables that are created outside a function are called global variable
+
+#creating a global variable inside a function
+def myFunc():
+    global aVariable
+    aVariable = "Some random string"
+myFunc()
+
+print(aVariable)
+
+# also use the global keyword if you wanna change the global variable inside a function
+
+f = "Fantastic"
+
+def funcFantastic():
+    global f
+    f = "Fun"
+
+funcFantastic()
+print(f)
