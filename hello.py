@@ -88,3 +88,11 @@ def funcFantastic():
 
 funcFantastic()
 print(f)
+
+compl = 1j
+print(compl)
+
+# random number
+import random
+
+print(random.randrange(1,100))
