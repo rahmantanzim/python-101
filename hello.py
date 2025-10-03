@@ -108,3 +108,24 @@ def anotherGreet(age, name):
     print(f"Hi {name}, your age is: {age}")
 
 anotherGreet(name='TanzimNextyear', age=34)
+
+#python dictionary
+
+person = {
+    "name": 'Tanzim',
+    "age": 34,
+    "Status" : "PR"
+}
+#accesing:
+print("Accesing age from dictionary: ", person["age"])
+
+#add a value
+person["email"] = 'tanzimr@mun.ca'
+
+print("Accesing dictionary: ", person)
+
+#updating a value
+person['name'] = 'Tanzim Rahman'
+print("Accesing dictionary: ", person)
+
+
