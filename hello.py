@@ -128,4 +128,16 @@ print("Accesing dictionary: ", person)
 person['name'] = 'Tanzim Rahman'
 print("Accesing dictionary: ", person)
 
+# A simple program:
 
+user_date = []
+print('Input your fav foods, type Done when finished:')
+while True:
+    fav_food = input('>')
+    if fav_food.lower() == 'done':
+        break
+    else:
+        user_date.append(fav_food)
+print('/n Your favorite foods are:')
+for food in user_date :
+    print(f'{food}')
