@@ -96,3 +96,15 @@ print(compl)
 import random
 
 print(random.randrange(1,100))
+
+
+#Function in Python:
+def greet(name,age):
+    print(f"Hi {name}, your age is: {age}")
+
+greet('Tanzim',33)
+
+def anotherGreet(age, name):
+    print(f"Hi {name}, your age is: {age}")
+
+anotherGreet(name='TanzimNextyear', age=34)
