@@ -6,7 +6,6 @@
 # Assume the input lists have the same length.
 from typing import List, Dict, Union
 
-
 def create_data_map(keys: List[str], values: List[Union[str,int,float]]) -> Dict[str, Union[str,int,float]]:
     # arguments:
     # keys:  List[str] -> a list of string type
@@ -19,3 +18,5 @@ vals = [1,'Tanzim', 33, 5.80]
 result = create_data_map(str_keys, vals)
 
 print(result) # Outputs {'id': 1, 'name': 'Tanzim', 'age': 33, 'height': 5.8}
+
+#GITHUB REPO: https://github.com/rahmantanzim/python-101
