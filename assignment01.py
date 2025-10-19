@@ -1,4 +1,4 @@
-# (10%) Write a Python function named create_data_map
+# 02. Write a Python function named create_data_map
 #  that accepts a List of string keys and 
 # a List of values. 
 # The function must return a Dictionary where the elements of the first list are mapped to the corresponding elements of the second list. Include Type Hints for all arguments (using List, Dict, and Union from the typing module, as appropriate) and the return value. 
@@ -16,6 +16,7 @@
 
 
 from typing import List, Dict, Union
+from typing import Any
 
 def create_data_map(keys: List[str], values: List[Union[str, int, float]]) -> Dict[str, Union[str, int, float]]:
     """
@@ -36,3 +37,24 @@ keys_list = ["name", "age", "city"]
 values_list = ["Tanzim", 28, "St. John's"]
 result = create_data_map(keys_list, values_list)
 print(result)
+
+
+
+def process_metadata(data_id: str, **kwargs: Any) -> None:
+    """
+    Prints the data_id and any additional metadata key-value pairs.
+    
+    Args:
+        data_id (str): The required data identifier.
+        **kwargs: Optional keyword arguments for metadata settings.
+    """
+    print(f"Data ID: {data_id}")
+    
+    # iterate through all key-value pairs in kwargs
+    for key, value in kwargs.items():
+        print(f"{key}: {value}")
+#call the function
+process_metadata("Data_Id_01", developer = "Tanzim", version = 1.0, verified = True,location="St. John's")
+
+
+
